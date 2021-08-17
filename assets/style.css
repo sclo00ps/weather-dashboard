@@ -1,0 +1,301 @@
+/* Color Scheme */
+:root {
+    --black: #191919;
+    --red: #840000;
+    --mustard: #EAA548;
+    --white:#fdfbf4;
+    --gray: #707070;
+}
+
+/* Global Site Styles */
+* {
+    box-sizing: border-box;
+}
+
+/* Site body */
+body {
+    background-color: var(--black);
+    color: var(--white);
+    /* min-height: 100vh; */
+}
+
+.search-footer {
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    /* display: block; */
+    max-width: 100%;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.index-footer {
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.footcap {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+/* FONT — Main headings and body paragraph text */
+h1, h2, h3, p, label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    color: var(--white);
+}
+
+/* FONT – Subheadings and button text */
+h4, h5, h6, .btn {
+    font-family: roc-grotesk-wide, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: var(--white);
+}
+
+/* Font sizes (desktop) */
+h1 {
+    font-size: 9vw;
+    font-weight: 400;
+    margin-block-start: .4em;
+    margin-block-end: .4em;
+}
+
+h2 {
+    font-size: 2.8vw;
+}
+
+h3 {
+    font-size: 2.2vw;
+}
+
+h4 {
+    font-size: 1.68vw;
+}
+
+h5 {
+    font-size: 1.2vw;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+a:hover {
+    color: var(--red);
+}
+
+/* Global button styles */
+.btn {
+    font-weight: 500;
+    letter-spacing: .15em;
+    border-radius: 0;
+    border: 0;
+    padding: 1em 2em;
+    background-color: var(--red);
+    transition: .5s ease;
+    margin: 1vw;
+}
+
+.btn:hover{
+    background-color: var(--mustard);
+    cursor: pointer;
+}
+
+
+/* Cover Page */
+.cover-page {
+    padding-top: 15vh;
+}
+
+.home-intro {
+    width: 60%;
+    margin: 5vw auto 1vw;
+}
+
+/* ----------------------------- */
+/* --- SEARCH FORM PAGE --- */
+/* ----------------------------- */
+
+.search-form-container {
+    padding-top: 4vw;
+    overflow: auto;
+    clear: both;
+    min-height: 60vh;
+}
+
+/* Accordion Styles */
+.accordion, .accordion-header, .accordion-item, .accordion-button {
+    background-color: transparent !important;
+    border: 0;
+}
+.accordion-header {
+    border-bottom: 1px solid var(--gray);
+}
+
+.accordion-body {
+    color: var(--white);
+}
+.accordion-button:after{
+    opacity: 1;
+}
+.accordion-button {
+    /* border-bottom: 1px solid var(--white); */
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-top: 1.25rem;
+}
+.accordion-button:focus {
+    box-shadow: 0 0 0 0;
+    border-color:var(--white)
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 0;
+}
+
+.form-select {
+    margin-bottom: 1vw;
+    border-radius: 0;
+}
+
+/* Checkboxes */
+.form-check {
+    padding-left:0;
+}
+.form-check-input {
+    margin-right: 1em;
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: 0;
+}
+
+.form-check-input:checked {
+    background-color: var(--mustard);
+    border-color: var(--mustard);
+}
+.form-check-input:focus {
+    box-shadow: 0 0 0 0;
+    border-color:var(--mustard)
+}
+
+/* Search Button */
+.search-btn {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 4vw;
+}
+
+.modal-dialog p, .modal-header h5 {
+    color: var(--black);
+}
+
+.modal-header, .modal-footer {
+    border-color: var(--gray);
+}
+
+.modal-btn {
+    cursor: pointer;
+}
+
+.modal-content {
+    border-radius: 0;
+    background-color: var(--white);
+}
+
+.modal-body {
+    padding: 2em 3em;
+}
+
+
+/* ----------------------------- */
+/* --- RESULTS PAGE --- */
+/* ----------------------------- */
+.results-container {
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+    margin: 2vw 3vw;
+}
+
+.cute-flex {
+    display: flex;
+    flex: 1 auto 300px;
+}
+
+.results-header {
+    padding-left: 1vw;
+}
+
+.results-title {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border-bottom: 1px solid var(--gray);
+}
+
+.food-result, .movie-result {
+    /* border: 1px solid yellow; */
+    padding: .5vw 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.food-result {
+    max-width: 18vw;
+}
+
+.movie-title, .food-title {
+    margin-top: .5vw;
+}
+
+.movie-poster, .food-pic {
+    max-width: 15vw;
+}
+
+
+
+
+
+
+/* ----------------------------- */
+/* --- MOBILE EDITS --- */
+/* ----------------------------- */
+@media screen and (max-width:727px) {
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+    h6 {
+        font-size: 18px;
+    }
+}
